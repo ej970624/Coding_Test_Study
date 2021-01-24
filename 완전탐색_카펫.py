@@ -7,8 +7,10 @@ def solution(brown, yellow):
     plus = int((brown-4)/2)
     for i in range(1, plus):
         if yellow == i * (plus-i):
-            x = i > plus-i and i or plus-i
+            x = plus - i
+            y = i
+            break
             
-    answer = [x+2, plus-x+2]
+    answer = [x+2, y+2]
     
     return answer
