@@ -26,7 +26,6 @@ public class Main_14501_퇴사 {
 		}
 		
 		int[] profit = new int[N+1];
-		profit[0] = 0;
 		for (int i = 0; i < N; i++) {
 			if (consultings[i].end > N) continue;
 			profit[consultings[i].end] = Math.max(profit[consultings[i].end], profit[consultings[i].start]+consultings[i].pay);
